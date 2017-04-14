@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        //below is a String variable to store input
+        String myString=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        
+        int stringLength = myString.length();
+        
+        //create a variable to store results of reversal
+        
+        String reversed = "";
+        
+        for(int i=0; i< stringLength; i++){
+            
+               reversed = reversed + myString.charAt(stringLength-1-i);
+            
+        }
+        
+        if(myString.equals(reversed)){
+            
+            System.out.println("Yes");
+            
+        } else {
+            
+            System.out.println("No");
+            
+        }
+        
+        
+        
+    }
+}
